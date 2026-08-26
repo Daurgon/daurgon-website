@@ -331,3 +331,41 @@ footer {
   .brand-subtitle { font-size: .48rem; }
   .hero-buttons { flex-direction: column; align-items: flex-start; }
 }
+.projects {
+  display: grid;
+  gap: 2rem;
+}
+
+.project {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+}
+
+.project iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.project h3 {
+  color: #dcc4a2;
+  margin: 0 0 .5rem;
+}
+
+.project strong {
+  display: block;
+  color: var(--red-bright);
+  margin: 1rem 0;
+}
+
+.project em {
+  color: var(--muted);
+}
+
+.project p {
+  color: #c9c2bb;
+  line-height: 1.7;
+}
