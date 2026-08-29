@@ -35,24 +35,29 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+
+// PROJEKT-FILTER
 const projectFilters = document.querySelectorAll(".project-filter");
 const projects = document.querySelectorAll(".project");
 
 projectFilters.forEach(filter => {
-  filter.addEventListener("click", () => {
-    const category = filter.dataset.filter;
+  filter.addEventListener("click", function () {
+
+    const selectedCategory = this.getAttribute("data-filter");
 
     projectFilters.forEach(button => {
       button.classList.remove("active");
     });
 
-    filter.classList.add("active");
+    this.classList.add("active");
 
     projects.forEach(project => {
-      if (category === "all" || project.dataset.category === category) {
-        project.classList.remove("hidden");
+      const projectCategory = project.getAttribute("data-category");
+
+      if (selectedCategory === "all" || selectedCategory === projectCategory) {
+        project.style.display = "";
       } else {
-        project.classList.add("hidden");
+        project.style.display = "none";
       }
     });
   });
