@@ -34,3 +34,26 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const projectFilters = document.querySelectorAll(".project-filter");
+const projects = document.querySelectorAll(".project");
+
+projectFilters.forEach(filter => {
+  filter.addEventListener("click", () => {
+    const category = filter.dataset.filter;
+
+    projectFilters.forEach(button => {
+      button.classList.remove("active");
+    });
+
+    filter.classList.add("active");
+
+    projects.forEach(project => {
+      if (category === "all" || project.dataset.category === category) {
+        project.classList.remove("hidden");
+      } else {
+        project.classList.add("hidden");
+      }
+    });
+  });
+});
