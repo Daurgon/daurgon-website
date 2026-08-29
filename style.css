@@ -369,3 +369,92 @@ footer {
   color: #c9c2bb;
   line-height: 1.7;
 }
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 0 0 2rem;
+}
+
+.project-filter {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: 0.2s ease;
+}
+
+.project-filter:hover,
+.project-filter.active {
+  color: #dcc4a2;
+  border-color: #dcc4a2;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.project {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+}
+
+.project iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.project h3 {
+  color: #dcc4a2;
+  margin: 0 0 0.5rem;
+}
+
+.project strong {
+  display: block;
+  color: var(--red-bright);
+  margin: 0.8rem 0;
+}
+
+.project p {
+  color: #c9c2bb;
+  line-height: 1.7;
+}
+
+.project.hidden {
+  display: none;
+}
+
+.project-steam {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  border: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+  color: var(--muted);
+}
+
+.steam-button {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+@media (max-width: 850px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-filters {
+    flex-wrap: wrap;
+  }
+}
