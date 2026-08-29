@@ -94,30 +94,20 @@
     <h2 data-de="Projekte" data-en="Projects">Projekte</h2>
   </div>
 
+  <div class="project-filters">
+    <button class="project-filter active" data-filter="all"
+            data-de="Alle" data-en="All">Alle</button>
+    <button class="project-filter" data-filter="video"
+            data-de="Video" data-en="Video">Video</button>
+    <button class="project-filter" data-filter="game"
+            data-de="Spiele" data-en="Games">Spiele</button>
+    <button class="project-filter" data-filter="audio"
+            data-de="Audio" data-en="Audio">Audio</button>
+  </div>
+
   <div class="projects">
 
-    <div class="project">
-      <iframe src="https://www.youtube.com/embed/LRR7typhs1c"
-              title="Erlkönig – Johann Wolfgang von Goethe"
-              allowfullscreen></iframe>
-
-      <h3 data-de="Erlkönig – Johann Wolfgang von Goethe"
-          data-en="The Erlking – Johann Wolfgang von Goethe">
-        Erlkönig – Johann Wolfgang von Goethe
-      </h3>
-
-      <strong data-de="Rolle: Erzähler, Vater, Sohn, Erlkönig"
-              data-en="Role: Narrator, Father, Son, Erlking">
-        Rolle: Erzähler, Vater, Sohn, Erlkönig
-      </strong>
-
-      <p data-de="In diesem Video präsentiere ich ein kurzes Hörspiel zur berühmten Ballade „Erlkönig“ von Johann Wolfgang von Goethe. Mit eigener Stimme eingesprochen, erwecke ich die dramatische nächtliche Reise von Vater und Sohn zum Leben – begleitet von düsterer Atmosphäre und eindringlicher Spannung. Lehnt euch zurück, lauscht der Geschichte und taucht ein in die unheimliche Welt des Erlkönigs."
-         data-en="In this video, I present a short audio drama based on Johann Wolfgang von Goethe's famous ballad “The Erlking”. Using my own voice, I bring the dramatic nighttime journey of a father and son to life, accompanied by a dark atmosphere and gripping tension. Sit back, listen to the story, and immerse yourself in the eerie world of the Erlking.">
-        In diesem Video präsentiere ich ein kurzes Hörspiel zur berühmten Ballade „Erlkönig“ von Johann Wolfgang von Goethe. Mit eigener Stimme eingesprochen, erwecke ich die dramatische nächtliche Reise von Vater und Sohn zum Leben – begleitet von düsterer Atmosphäre und eindringlicher Spannung. Lehnt euch zurück, lauscht der Geschichte und taucht ein in die unheimliche Welt des Erlkönigs.
-      </p>
-    </div>
-
-    <div class="project">
+    <div class="project" data-category="video">
       <iframe src="https://www.youtube.com/embed/cph-Z2bW2Uk"
               title="Let's Voice Coffee Talk"
               allowfullscreen></iframe>
@@ -125,7 +115,7 @@
       <h3>Let's Voice Coffee Talk</h3>
 
       <strong data-de="Rolle: Gala, Hendry"
-              data-en="Role: Gala, Hendry">
+              data-en="Roles: Gala, Hendry">
         Rolle: Gala, Hendry
       </strong>
 
@@ -135,7 +125,8 @@
       </p>
     </div>
 
-    <div class="project">
+
+    <div class="project" data-category="video">
       <iframe src="https://www.youtube.com/embed/jGkWU_n4e1E"
               title="FORBIDDEN SOULS EP.1"
               allowfullscreen></iframe>
@@ -155,10 +146,12 @@
       </p>
     </div>
 
-   <div class="project">
+
+    <div class="project" data-category="game">
       <div class="project-steam">
         <span>🎮</span>
-        <span data-de="Auf Steam erhältlich" data-en="Available on Steam">
+        <span data-de="Auf Steam erhältlich"
+              data-en="Available on Steam">
           Auf Steam erhältlich
         </span>
       </div>
