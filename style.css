@@ -331,72 +331,11 @@ footer {
   .brand-subtitle { font-size: .48rem; }
   .hero-buttons { flex-direction: column; align-items: flex-start; }
 }
-.projects {
-  display: grid;
-  gap: 2rem;
-}
-
-.project {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 1.5rem;
-}
-
-.project iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-  display: block;
-  margin-bottom: 1.5rem;
-}
-
-.project h3 {
-  color: #dcc4a2;
-  margin: 0 0 .5rem;
-}
-
-.project strong {
-  display: block;
-  color: var(--red-bright);
-  margin: 1rem 0;
-}
-
-.project em {
-  color: var(--muted);
-}
-
-.project p {
-  color: #c9c2bb;
-  line-height: 1.7;
-}
-
-.project-filters {
-  display: flex;
-  justify-content: center;
-  gap: 0.7rem;
-  margin: 0 0 2rem;
-}
-
-.project-filter {
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  padding: 0.6rem 1.2rem;
-  cursor: pointer;
-  font-family: inherit;
-  transition: 0.2s ease;
-}
-
-.project-filter:hover,
-.project-filter.active {
-  color: #dcc4a2;
-  border-color: #dcc4a2;
-}
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
 }
 
 .project {
@@ -416,54 +355,58 @@ footer {
 .project h3 {
   color: #dcc4a2;
   margin: 0 0 .5rem;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 .project strong {
   display: block;
   color: var(--red-bright);
   margin: .7rem 0;
-  font-size: .9rem;
+  font-size: .85rem;
 }
 
 .project em {
   color: var(--muted);
-  font-size: .85rem;
+  font-size: .8rem;
 }
 
 .project p {
   color: #c9c2bb;
   line-height: 1.6;
-  font-size: .9rem;
-}
-
-.project.hidden {
-  display: none;
+  font-size: .85rem;
 }
 
 .project-filters {
   display: flex;
   justify-content: center;
-  gap: .5rem;
-  margin: 0 0 1.8rem;
+  gap: .6rem;
+  margin-bottom: 1.8rem;
 }
 
 .project-filter {
-  background: transparent;
-  border: 1px solid var(--border);
+  background: var(--surface);
   color: var(--muted);
-  padding: .5rem 1rem;
+  border: 1px solid var(--border);
+  padding: .55rem 1.1rem;
   cursor: pointer;
   font-family: Inter, Arial, sans-serif;
-  font-size: .8rem;
-  transition: .2s ease;
+  font-size: .78rem;
+  transition: all .2s ease;
 }
 
-.project-filter:hover,
-.project-filter.active {
+.project-filter:hover {
   color: #dcc4a2;
-  border-color: #dcc4a2;
-  background: rgba(198, 163, 106, .06);
+  border-color: var(--gold);
+}
+
+.project-filter.active {
+  color: #fff0df;
+  background: rgba(179, 32, 37, .35);
+  border-color: var(--red-bright);
+}
+
+.project.hidden {
+  display: none;
 }
 
 .project-steam {
@@ -475,7 +418,7 @@ footer {
   border: 1px solid var(--border);
   margin-bottom: 1rem;
   color: var(--muted);
-  font-size: .85rem;
+  font-size: .8rem;
 }
 
 .steam-button {
@@ -483,10 +426,9 @@ footer {
   color: #dcc4a2;
   text-decoration: none;
   border: 1px solid var(--border);
-  padding: .6rem .9rem;
+  padding: .55rem .8rem;
   margin-top: .5rem;
-  font-size: .8rem;
-  transition: .2s ease;
+  font-size: .75rem;
 }
 
 .steam-button:hover {
@@ -496,7 +438,7 @@ footer {
 
 @media (max-width: 1000px) {
   .projects {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
