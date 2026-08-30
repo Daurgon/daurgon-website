@@ -451,3 +451,50 @@ footer {
     flex-wrap: wrap;
   }
 }
+
+.role-title {
+  font-family: Cinzel, serif;
+  color: #dcc4a2;
+  font-size: .8rem;
+  letter-spacing: .08em;
+  margin: 1rem 0 .6rem;
+}
+
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-bottom: .5rem;
+}
+
+.role-tags span {
+  display: inline-block;
+  padding: .3rem .55rem;
+  background: rgba(198, 163, 106, .07);
+  border: 1px solid var(--border);
+  color: #c9c2bb;
+  font-size: .72rem;
+}
+
+.project-contribution {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-contribution strong {
+  margin: 0 0 .3rem;
+  color: var(--red-bright);
+}
+
+.project-contribution span {
+  color: #c9c2bb;
+  font-size: .85rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .5rem;
+}
